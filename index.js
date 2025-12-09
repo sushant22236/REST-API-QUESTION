@@ -20,9 +20,11 @@ app.get('/user', (req, res) => {
 let user = [];
 
 app.post('/post-user', (req, res) => {
-    user.push(req.body)
+    user.push({"name": "rohit"})
     res.send("user Added")
 })
+
+//challenge 3.
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
